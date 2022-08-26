@@ -13,6 +13,14 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
     public I_BE2_Instruction TriggerInstruction { get; set; }
     public bool markToAdd;
     public bool MarkToAdd { get => markToAdd; set => markToAdd = value; }
+
+    IEnumerator Delay(int stacksCount)
+    {
+        yield return new WaitForSeconds(1f);
+
+
+    }
+
     public bool IsActive
     {
         get => _isActive;
@@ -78,8 +86,15 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
     //}
 
     public int OverflowGuard { get; set; }
-    
+
     // v2.4 - Execute method of Blocks Stack refactored 
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Debug.Log("Check");
+    }
+
     public void Execute()
     {
         if (IsActive && _arrayLength > Pointer)
@@ -87,9 +102,8 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
             if (Pointer == 0)
             {
                 I_BE2_Block firstBlock = TriggerInstruction.InstructionBase.Block;
-                BE2_MainEventsManager.Instance.TriggerEvent(BE2EventTypesBlock.OnStackExecutionStart, firstBlock);
+                BE2_MainEventsManager.Instance.TriggerEvent(BE2EventTypesBlock.OnStackExecutionStart, firstBlock);   
             }
-
             InstructionsArray[Pointer].Function();
             OverflowGuard = 0;
         }

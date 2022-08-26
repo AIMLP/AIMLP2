@@ -57,12 +57,14 @@ public class BE2_ExecutionManager : MonoBehaviour
         ExecuteInstructions();
     }
 
+
     void ExecuteInstructions()
     {
         int stacksCount = blocksStacksArray.Length;
         for (int i = 0; i < stacksCount; i++)
         {
             blocksStacksArray[i].Execute();
+
         }
     }
 
@@ -78,6 +80,8 @@ public class BE2_ExecutionManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
+
+  
     // v2.3 - method UpdateBlocksStackList from the Execution Manager made public
     public void UpdateBlocksStackList()
     {
@@ -96,6 +100,7 @@ public class BE2_ExecutionManager : MonoBehaviour
                     BE2_ArrayUtils.Add(ref blocksStacksArray, blocksStack);
                     blocksStack.TargetObject = programmingEnv.TargetObject;
                 }
+                
             }
         }
 

@@ -103,18 +103,41 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
 
     int _overflowLimit = 100;
 
+
+    //IEnumerator Delay1(I_BE2_Instruction instruction)
+    //{
+
+    //    yield return new WaitForSeconds(1f);
+    //    Debug.Log("delay1");
+
+    //    yield break;
+
+    //}
+    //IEnumerator Delay2()
+    //{
+    //    yield return new WaitForSeconds(1f);
+    //    Debug.Log("delay2");
+
+    //}
+    //Coroutine buffCoroutine = null;
+
+
     public void ExecuteSection(int sectionIndex)
     {
+       
         if (BlocksStack.InstructionsArray.Length > LocationsArray[sectionIndex])
         {
             I_BE2_Instruction instruction = BlocksStack.InstructionsArray[LocationsArray[sectionIndex]];
             BlockTypeEnum type = instruction.InstructionBase.Block.Type;
+            
+            
             // v2.1 - Loops are now executed "in frame" instead of mandatorily "in update". Faster loop execution and nested loops without delay
             //if (type != BlockTypeEnum.loop && !instruction.ExecuteInUpdate && BlocksStack.OverflowGuard < _overflowLimit)
             if (!instruction.ExecuteInUpdate && BlocksStack.OverflowGuard < _overflowLimit)
             {
                 BlocksStack.OverflowGuard++;
                 instruction.Function();
+
             }
             else
             {
@@ -137,11 +160,13 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
         {
             I_BE2_Instruction instruction = BlocksStack.InstructionsArray[_lastLocation];
             BlockTypeEnum type = instruction.InstructionBase.Block.Type;
+         
             // v2.1 - Loops are now executed "in frame" instead of mandatorily "in update". Faster loop execution and nested loops without delay
             if (!instruction.ExecuteInUpdate && BlocksStack.OverflowGuard < _overflowLimit)
             {
                 BlocksStack.OverflowGuard++;
                 instruction.Function();
+
             }
             else
             {
@@ -156,6 +181,7 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
         {
             BlocksStack.Pointer = _lastLocation;
         }
+
     }
 
     // ### Instruction ###

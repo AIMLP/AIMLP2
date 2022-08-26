@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.3f1 (af2e63e8f9bd) revision 11480675'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Enterprise' Language: 'ko' Physical Memory: 8051 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16171 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/pc/Desktop/AIMLP2
+D:/Git/AIMLP2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-11688
-Successfully changed project path to: C:/Users/pc/Desktop/AIMLP2
-C:/Users/pc/Desktop/AIMLP2
+61422
+Successfully changed project path to: D:/Git/AIMLP2
+D:/Git/AIMLP2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,106 +47,106 @@ C:/Users/pc/Desktop/AIMLP2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 115.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 39.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/pc/Desktop/AIMLP2/Assets
+[Subsystems] Discovering subsystems at path D:/Git/AIMLP2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
-    Vendor:   Intel
-    VRAM:     4025 MB
-    Driver:   23.20.16.4849
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8050 MB
+    Driver:   31.0.15.1694
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.028698 seconds.
+Registered in 0.016891 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 76.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 42.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.586 seconds
+- Completed reload, in  0.738 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1587ms)
-		BeginReloadAssembly (213ms)
+	ReloadAssembly (738ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (995ms)
-			LoadAssemblies (207ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (494ms)
+			LoadAssemblies (105ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (289ms)
+			SetupTypeCache (110ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (582ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (294ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (101ms)
+				InitializePlatformSupportModulesInManaged (63ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (76ms)
+				RefreshPlugins (43ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (271ms)
-				ProcessInitializeOnLoadMethodAttributes (132ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014449 seconds.
+Registered in 0.003399 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.454 seconds
+- Completed reload, in  1.969 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2456ms)
-		BeginReloadAssembly (352ms)
+	ReloadAssembly (1970ms)
+		BeginReloadAssembly (541ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (138ms)
-		EndReloadAssembly (1877ms)
-			LoadAssemblies (143ms)
+			CreateAndSetChildDomain (456ms)
+		EndReloadAssembly (1279ms)
+			LoadAssemblies (630ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (604ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (122ms)
-			SetupLoadedEditorAssemblies (849ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (358ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (47ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (540ms)
-				ProcessInitializeOnLoadMethodAttributes (82ms)
-				AfterProcessingInitializeOnLoad (29ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1803 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (50.0 KB). Loaded Objects now: 2279.
-Memory consumption went from 78.0 MB to 78.0 MB.
-Total: 7.761300 ms (FindLiveObjects: 0.330000 ms CreateObjectMapping: 0.283300 ms MarkObjects: 6.896600 ms  DeleteObjects: 0.249200 ms)
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (50.2 KB). Loaded Objects now: 2282.
+Memory consumption went from 78.3 MB to 78.2 MB.
+Total: 3.360300 ms (FindLiveObjects: 0.414600 ms CreateObjectMapping: 0.063200 ms MarkObjects: 2.753200 ms  DeleteObjects: 0.128100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,25 +160,290 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 535.902367 seconds.
-  path: Assets/AIMLP/Easy_5.unity
-  artifactKey: Guid(5e38e7a598d160b42b7ef4d351e9ceab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AIMLP/Easy_5.unity using Guid(5e38e7a598d160b42b7ef4d351e9ceab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22c209a3b43d386b9acecd80b5ee57a') in 0.010383 seconds 
+  Time since last request: 109915.226601 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d459e7cdfc5eb71fbf11cab376f2fe') in 0.164797 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/AIMLP/Easy_1.unity
-  artifactKey: Guid(d4a2d6eda11f6274cabff98a73cc8be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AIMLP/Easy_1.unity using Guid(d4a2d6eda11f6274cabff98a73cc8be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f846b9f388404f89b32c1f5a3265dd29') in 0.004872 seconds 
+  Time since last request: 48.565900 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb67a20e2a66e8d892cf95762949aac6') in 0.017164 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003111 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (950ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (706ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1834 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (31.7 KB). Loaded Objects now: 2328.
+Memory consumption went from 82.9 MB to 82.9 MB.
+Total: 2.530200 ms (FindLiveObjects: 0.170000 ms CreateObjectMapping: 0.045000 ms MarkObjects: 2.302100 ms  DeleteObjects: 0.012200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/AIMLP/Easy_3.unity
-  artifactKey: Guid(c300c06a51efe674891b5d8083174317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AIMLP/Easy_3.unity using Guid(c300c06a51efe674891b5d8083174317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b2c49936c6a9ae99ae5f972868b3e2') in 0.003803 seconds 
+  Time since last request: 167.687793 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82de108d92b6bc8fc51cbef1d96774be') in 0.070861 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/AIMLP/Easy_4.unity
-  artifactKey: Guid(f8ba61cb8cfe5614497f13ac60d1ca94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AIMLP/Easy_4.unity using Guid(f8ba61cb8cfe5614497f13ac60d1ca94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f69528310276c62cc81345a3daf2262') in 0.004411 seconds 
+  Time since last request: 7.061071 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1431f3f6189d5c3e4be763561923ce01') in 0.015233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.277634 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b978a16b45b255ddf4f9e6918661ce4') in 0.015454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.068374 seconds.
+  path: Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png
+  artifactKey: Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Sprites/Round/Trigger/Header_Custome.png using Guid(6487981c98b552f44b13f6d63dafa7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffa27c86703cb5e1c3b559c9ac70ddb') in 0.015516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7093.902184 seconds.
+  path: Assets/BlocksEngine2/Scenes/BE2MultipleTargetObjects.unity
+  artifactKey: Guid(0333588ed2034d28cbcc190ca5aeeb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scenes/BE2MultipleTargetObjects.unity using Guid(0333588ed2034d28cbcc190ca5aeeb80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f3f0b628edda20528ecf11e65124d12') in 0.009865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.723826 seconds.
+  path: Assets/BlocksEngine2/Scenes/BE2SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scenes/BE2SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a2d5877fd33059756eb2df81519377') in 0.018380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.636244 seconds.
+  path: Assets/BlocksEngine2/Scripts/BlockSections/BE2_BlockSection.cs
+  artifactKey: Guid(44b2577df6e6976469e4fd07054db179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/BlockSections/BE2_BlockSection.cs using Guid(44b2577df6e6976469e4fd07054db179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9c7b77075c8de2bf038bb6f8cf8c11') in 0.025176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.137198 seconds.
+  path: Assets/BlocksEngine2/Scripts/BlockSections/I_BE2_BlockSectionBody.cs
+  artifactKey: Guid(8942c98d3cde85c75815b70145dc981b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/BlockSections/I_BE2_BlockSectionBody.cs using Guid(8942c98d3cde85c75815b70145dc981b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc99afa85d39a9e778eee155a5118e2f') in 0.003479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.286546 seconds.
+  path: Assets/BlocksEngine2/Scripts/EnvironmentElements
+  artifactKey: Guid(be548273fac232d20b8b3f00f3b2889b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EnvironmentElements using Guid(be548273fac232d20b8b3f00f3b2889b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d717288c5292507a9a63c7657ff03aa') in 0.011548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.653294 seconds.
+  path: Assets/BlocksEngine2/Scripts/Extras
+  artifactKey: Guid(8a0db84a5984112debbd4698585eeebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/Extras using Guid(8a0db84a5984112debbd4698585eeebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8f3e77a19dc300d19d13758082044f') in 0.009800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.433969 seconds.
+  path: Assets/BlocksEngine2/Scripts/HeaderItems
+  artifactKey: Guid(8d434cedd1ea016e5a63c080db4d2db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/HeaderItems using Guid(8d434cedd1ea016e5a63c080db4d2db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37ad867386a07c6b948ab8e0aa741f1') in 0.003425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.379055 seconds.
+  path: Assets/BlocksEngine2/Scripts/UI
+  artifactKey: Guid(0f47f2bfa977966dfb70c7b8ed954703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/UI using Guid(0f47f2bfa977966dfb70c7b8ed954703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3232a72fe90e1c2bd822256b2e0cddc8') in 0.003627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.470524 seconds.
+  path: Assets/BlocksEngine2/Scripts/Utils
+  artifactKey: Guid(bc7d02c461f9ce2b7b1d1efabf6adabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/Utils using Guid(bc7d02c461f9ce2b7b1d1efabf6adabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1e7f5d0094aebab7ad4908cfebd166') in 0.003058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.213186 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BE2_InstructionBase.cs
+  artifactKey: Guid(77126032b7a07c664a2103ffe1ae9b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BE2_InstructionBase.cs using Guid(77126032b7a07c664a2103ffe1ae9b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1892abad63deec4fc5fbbac90577396d') in 0.003242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.991027 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RepeatUntil.cs
+  artifactKey: Guid(c8807353edac647ac9c8b23a323e701b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RepeatUntil.cs using Guid(c8807353edac647ac9c8b23a323e701b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb137d68f6b83a2800d9d2c9d4888a8') in 0.009283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.415665 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RepeatForever.cs
+  artifactKey: Guid(b2bf75e3c4d7d5848a6d934a9ef41f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RepeatForever.cs using Guid(b2bf75e3c4d7d5848a6d934a9ef41f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b91fcbdeb50636e347f42eb29942407') in 0.003214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.471194 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_Repeat.cs
+  artifactKey: Guid(c60498078d7a9022f98cc4247d63e841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_Repeat.cs using Guid(c60498078d7a9022f98cc4247d63e841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8172773138a21af11d7c7c9437b2db8') in 0.002727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.200025 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RotateAxis.cs
+  artifactKey: Guid(56fa54598158acebf9777f671f5f9a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_RotateAxis.cs using Guid(56fa54598158acebf9777f671f5f9a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d13b9ec788e6b835d3f184a9d75f60') in 0.003578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.466401 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_SetVariable.cs
+  artifactKey: Guid(90fc89e8727ae21a1bda1e0e37fce97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_SetVariable.cs using Guid(90fc89e8727ae21a1bda1e0e37fce97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26d57545b9a729a8bb49b8e661f84cd') in 0.002388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.400999 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_SlideForward.cs
+  artifactKey: Guid(b165d22c765d63158b35352559fbad23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_SlideForward.cs using Guid(b165d22c765d63158b35352559fbad23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babc32eb52afa185b6ddb7eef0c10b75') in 0.003346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.400919 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_TranslateToPosition.cs
+  artifactKey: Guid(6c37877e3fae09a6ab123a4e6aa13505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_TranslateToPosition.cs using Guid(6c37877e3fae09a6ab123a4e6aa13505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e60bffce17fa205247b4467aa60404d') in 0.002820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.849106 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_WhenKeyPressed.cs
+  artifactKey: Guid(635e3594256425656a3891cf0479e779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_WhenKeyPressed.cs using Guid(635e3594256425656a3891cf0479e779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ee2ba38676954c63b1a170c8c39a66') in 0.003498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.329236 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_WhenJoystickKeyPressed.cs
+  artifactKey: Guid(b867a50695eec328c8de62d4c0694701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_WhenJoystickKeyPressed.cs using Guid(b867a50695eec328c8de62d4c0694701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7144d2fde0dfcc7c862821c482e9808') in 0.003243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.446313 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_Wait.cs
+  artifactKey: Guid(92571dcef3f7be73bb30a9f7e061a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_Wait.cs using Guid(92571dcef3f7be73bb30a9f7e061a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8906f3608015d2edc62b6d7d9324563') in 0.002766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.348272 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_TurnDirection.cs
+  artifactKey: Guid(d81fccd562cce44efa1959eadfa01fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_TurnDirection.cs using Guid(d81fccd562cce44efa1959eadfa01fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9b53419ec290a636c8c868a88c0942') in 0.002902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.504765 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_BiggerThan.cs
+  artifactKey: Guid(55a74bf95127b61d9b9ff6c5484a4f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_BiggerThan.cs using Guid(55a74bf95127b61d9b9ff6c5484a4f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962345e11fb12957073486f30a871648') in 0.003110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.451108 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Equal.cs
+  artifactKey: Guid(b138216973448636c92b91b7552f47ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Equal.cs using Guid(b138216973448636c92b91b7552f47ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bf9a2dd05adf29fb3e5943a5165034') in 0.003117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.748044 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Nand.cs
+  artifactKey: Guid(c31036048bad656e88126dc8e3878bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Nand.cs using Guid(c31036048bad656e88126dc8e3878bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78905fd07c5ffa1e5afbf55a98adcb8b') in 0.002983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.430187 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Multiply.cs
+  artifactKey: Guid(70d4fcc59f17a55e4a4690fee043bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Multiply.cs using Guid(70d4fcc59f17a55e4a4690fee043bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624632dda8a206411dd099cfa34dc497') in 0.003318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.060363 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Or.cs
+  artifactKey: Guid(9a645f21751494fc0b6131596849ef02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Or.cs using Guid(9a645f21751494fc0b6131596849ef02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38459688b5b8efc67be6c2006f12a73') in 0.003086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.237703 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Xnor.cs
+  artifactKey: Guid(a21c4fd4cab3761e7baabf43c2970a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Xnor.cs using Guid(a21c4fd4cab3761e7baabf43c2970a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb2914b4f6f944a98ebaa3a8f575829') in 0.002811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.671280 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Variable.cs
+  artifactKey: Guid(e30bc94aef39a5b46b71aa6c28c235d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Variable.cs using Guid(e30bc94aef39a5b46b71aa6c28c235d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4acb17c99484818cf12cd515d70a71') in 0.003348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.325218 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Sum.cs
+  artifactKey: Guid(287123b18f0eac0d9a6fcaacd8c481a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Op_Sum.cs using Guid(287123b18f0eac0d9a6fcaacd8c481a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef0088873fdf43a49320164653a84ee') in 0.002538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.825594 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_AddVariable.cs
+  artifactKey: Guid(2b4b2686b95f6fe23b30d393307fe860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/BE2_Ins_AddVariable.cs using Guid(2b4b2686b95f6fe23b30d393307fe860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d303d9e4fb34cfff3181c12e6a8b29a') in 0.003012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.849101 seconds.
+  path: Assets/BlocksEngine2/Scripts/EditorScripts
+  artifactKey: Guid(732e956adc7c40d72b7dde395846017d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EditorScripts using Guid(732e956adc7c40d72b7dde395846017d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26aaf23159fca3a76c235e29300f15e7') in 0.004045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.244842 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Core/EventSystem/BE2_EventsManager.cs
+  artifactKey: Guid(d95e84b5f0657dcdc871a8fbca7869f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Core/EventSystem/BE2_EventsManager.cs using Guid(d95e84b5f0657dcdc871a8fbca7869f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b3e51ed2d227d23f6d055e895167b7') in 0.003567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 529.199967 seconds.
+  path: Assets/BlocksEngine2/Scripts/EngineCore/Core/BE2_BlocksStack.cs
+  artifactKey: Guid(425c09c817a41c4e1a4dbf4df98ee058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlocksEngine2/Scripts/EngineCore/Core/BE2_BlocksStack.cs using Guid(425c09c817a41c4e1a4dbf4df98ee058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b64b2c7d88bf1e0338bcb7596cf81fa') in 0.014927 seconds 

@@ -13,6 +13,7 @@ public class BE2_MainEventsManager : MonoBehaviour
         {
             if (_instance == null)
                 _instance = new BE2_EventsManager();
+
             return _instance;
         }
     }

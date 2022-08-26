@@ -108,6 +108,7 @@ public class BE2_EventsManager
         if (_eventDictionaryBlock.TryGetValue(eventName, out thisEvent))
         {
             thisEvent.Invoke(block);
+
         }
     }
 }

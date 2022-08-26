@@ -53,6 +53,7 @@ public class BE2_Ins_AddVariable : BE2_InstructionBase, I_BE2_Instruction
     //    
     //}
 
+
     public new void Function()
     {
         _input0 = Section0Inputs[0];
