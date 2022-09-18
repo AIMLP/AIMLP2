@@ -353,6 +353,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/BlocksEngine2/Scripts/EditorScripts/Editor/BE2_Editor_Inspector.cs"
+"Assets/LowPolyWater_Pack/Scripts/Editor/GeneratePlane.cs"
 -langversion:9.0
 
 /deterministic

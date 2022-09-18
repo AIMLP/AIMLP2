@@ -678,8 +678,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!136 &8517257065642945669
-CapsuleCollider:
+--- !u!65 &5782613889744693093
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -688,10 +688,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.35
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.53, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.14, z: 0.8}
+  m_Center: {x: 0, y: 0.13, z: 0}
 --- !u!114 &8711027284547402588
 MonoBehaviour:
   m_ObjectHideFlags: 0

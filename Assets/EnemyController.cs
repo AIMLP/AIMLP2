@@ -25,10 +25,11 @@ public class EnemyController : MonoBehaviour
         //Debug.Log(hpSlider.value);
         if (hpSlider.value <= 0)
         {
-            anim.SetTrigger("Die");
+            anim.Play("Die");
+            //anim.SetTrigger("Die");
             this.particleObject.Play();
             Invoke("StopParticle", 0.1f);
-            Invoke("DestroyEnemy", 3f);
+            Invoke("DestroyEnemy", 1f);
 
         }
 
