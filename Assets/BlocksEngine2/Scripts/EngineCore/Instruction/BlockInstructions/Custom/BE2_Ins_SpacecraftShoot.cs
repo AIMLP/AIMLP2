@@ -18,7 +18,7 @@ public class BE2_Ins_SpacecraftShoot : BE2_InstructionBase, I_BE2_Instruction
     {
         if (TargetObject is BE2_TargetObjectSpacecraft3D)
         {
-            (TargetObject as BE2_TargetObjectSpacecraft3D).Shoot();
+            //(TargetObject as BE2_TargetObjectSpacecraft3D).Shoot();
         }
         ExecuteNextInstruction();
     }

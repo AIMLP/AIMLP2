@@ -10,6 +10,7 @@ public class BE2_Op_Variable : BE2_InstructionBase, I_BE2_Instruction
     //}
     //
 
+
     protected override void OnStart()
     {
         _variablesManager = BE2_VariablesManager.instance;

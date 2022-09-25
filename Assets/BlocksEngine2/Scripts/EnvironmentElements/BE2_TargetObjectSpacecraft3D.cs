@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class BE2_TargetObjectSpacecraft3D : BE2_TargetObject
 {
-    GameObject _bullet;
+    //GameObject _bullet;
 
     public new Transform Transform => transform;
+    public delegate void CheckEvent();
+ 
+
+
+
 
     void Awake()
     {
         // v2.6 - changed way to find "bullet" child of Target Object
         //_bullet = transform.GetChild(transform.childCount-1).gameObject;
-        foreach (Transform child in transform)
-        {
-            if (child.name == "Bullet")
-                _bullet = child.gameObject;
-        }
+        //foreach (Transform child in transform)
+        //{
+        //    if (child.name == "Bullet")
+        //        _bullet = child.gameObject;
+        //}
 
+    
+    
     }
 
     //void Start()
@@ -30,13 +37,13 @@ public class BE2_TargetObjectSpacecraft3D : BE2_TargetObject
     //
     //}
 
-    public void Shoot()
-    {
-        GameObject newBullet = Instantiate(_bullet, _bullet.transform.position, Quaternion.identity);
-        newBullet.SetActive(true);
-        newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-        StartCoroutine(C_DestroyTime(newBullet));
-    }
+    //public void Shoot()
+    //{
+    //    GameObject newBullet = Instantiate(_bullet, _bullet.transform.position, Quaternion.identity);
+    //    newBullet.SetActive(true);
+    //    newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+    //    StartCoroutine(C_DestroyTime(newBullet));
+    //}
     IEnumerator C_DestroyTime(GameObject go)
     {
         yield return new WaitForSeconds(1f);
