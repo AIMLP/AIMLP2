@@ -50,6 +50,7 @@ public class BE2_Ins_SetVariable : BE2_InstructionBase, I_BE2_Instruction
     public new void Function()
     {
         _variablesManager.AddOrUpdateVariable(Section0Inputs[0].StringValue, Section0Inputs[1].StringValue);
+
         ExecuteNextInstruction();
     }
 }

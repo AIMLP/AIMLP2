@@ -51,7 +51,7 @@ public class BE2_Ins_MoveForward : BE2_InstructionBase, I_BE2_Instruction
         _value = _input0.FloatValue;
         _value2 = _input1.StringValue;
 
-        if (_value2 == "앞쪽")
+        if (_value2 == "앞")
         {
             if (_firstPlay)
             {
@@ -79,7 +79,7 @@ public class BE2_Ins_MoveForward : BE2_InstructionBase, I_BE2_Instruction
             }
         }
 
-        else if (_value2 == "뒤쪽")
+        else if (_value2 == "뒤")
         {
             if (_firstPlay)
             {

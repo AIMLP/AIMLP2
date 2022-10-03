@@ -5,31 +5,61 @@ using UnityEngine;
 public class FrontCheck : BE2_TargetObjectSpacecraft3D
 {
 
-    public static event CheckEvent FrontMonsterOn;
-    public static event CheckEvent FrontMonsterOff;
-    public static event CheckEvent FrontRoadOn;
-    public static event CheckEvent FrontRoadOff;
+    public string FMonster = "0";
+    public string FRoad = "0";
 
+    BE2_VariablesManager _variablesManager;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Monster")
-            FrontMonsterOn();
-
-        if (other.tag == "Road")
-            FrontRoadOn();
-    }
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        _variablesManager = BE2_VariablesManager.instance;
+        _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
+        _variablesManager.AddOrUpdateVariable("앞에 길", FRoad);
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerStay(Collider other)
     {
+        if (other.tag == "Monster")
+            MonsterOn();      
         
+        if (other.tag == "Road")
+            RoadOn();
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Monster")
+            MonsterOff();
+        
+        if (other.tag == "Road")
+            RoadOff();
+    }
+
+    private void MonsterOn()
+    {
+        FMonster = "1";
+        _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
+    }
+
+    private void RoadOn()
+    {
+        FRoad = "1";
+        _variablesManager.AddOrUpdateVariable("앞에 길", FRoad);
+    }
+
+    private void MonsterOff()
+    {
+        FMonster = "0";
+        _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
+    }
+
+    private void RoadOff()
+    {
+        FRoad = "0";
+        _variablesManager.AddOrUpdateVariable("앞에 길", FRoad);
+    }
+
+
+
 }

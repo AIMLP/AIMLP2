@@ -38,11 +38,9 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("attack");
         if (other.gameObject.layer == LayerMask.NameToLayer("attack"))
         {
             hpSlider.value--;
-            //Debug.Log("attack");
         }
     }
 

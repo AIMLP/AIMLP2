@@ -20,8 +20,11 @@ public class glowOn : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Clear");
-        this.particleObject.Play();
+        if (other.tag == "PlayerLocation")
+        {
+            Debug.Log("Clear");
+            this.particleObject.Play();
+        }
 
     }
 

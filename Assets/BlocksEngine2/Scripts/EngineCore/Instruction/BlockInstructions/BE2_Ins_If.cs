@@ -30,11 +30,16 @@ public class BE2_Ins_If : BE2_InstructionBase, I_BE2_Instruction
 
     public new void Function()
     {
+
         //EndLoop = true;
         if (_isFirstPlay)
         {
             _input0 = Section0Inputs[0];
             _value = _input0.StringValue;
+            Debug.Log(Section0Inputs[0]);
+            Debug.Log(_value);
+
+
 
             if (_value == "1" || _value == "true")
             {
