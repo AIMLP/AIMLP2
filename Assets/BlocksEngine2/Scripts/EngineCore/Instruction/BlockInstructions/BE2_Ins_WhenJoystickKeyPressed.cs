@@ -8,10 +8,28 @@ public class BE2_Ins_WhenJoystickKeyPressed : BE2_InstructionBase, I_BE2_Instruc
     Dropdown _dropdown;
     BE2_VirtualJoystick _virtualJoystick;
 
-    //protected override void OnAwake()
+    public bool IsFunctionActive = false;
+    //public bool isFunctionActive
     //{
-    //     
+
     //}
+
+
+    public static BE2_Ins_WhenJoystickKeyPressed instance = null;
+    protected override void OnAwake()
+    {
+        if (instance == null) //instance가 null. 즉, 시스템상에 존재하고 있지 않을때
+        {
+            instance = this; //내자신을 instance로 넣어줍니다.
+            DontDestroyOnLoad(gameObject); //OnLoad(씬이 로드 되었을때) 자신을 파괴하지 않고 유지
+        }
+        else
+        {
+            if (instance != this) //instance가 내가 아니라면 이미 instance가 하나 존재하고 있다는 의미
+                Destroy(this.gameObject); //둘 이상 존재하면 안되는 객체이니 방금 AWake된 자신을 삭제
+        }
+    }
+
 
     protected override void OnStart()
     {
@@ -40,20 +58,13 @@ public class BE2_Ins_WhenJoystickKeyPressed : BE2_InstructionBase, I_BE2_Instruc
         if (_virtualJoystick.keys[_dropdown.value].isPressed)
         {
             BlocksStack.IsActive = true;
+            BE2_Ins_WhenPlayClicked.instance.IsPlayActive = false;
         }
-    }
+        IsFunctionActive = BlocksStack.IsActive;
+        
 
-    //KeyCode _key;
-    //void ParseKeyCode()
-    //{
-    //    KeyCode key = KeyCode.A;
-    //    try
-    //    {
-    //        key = (KeyCode)System.Enum.Parse(typeof(KeyCode), GetSectionInputs(0)[0].StringValue);
-    //    }
-    //    catch { }
-    //    _key = key;
-    //}
+    }
+    
 
     public new void Function()
     {

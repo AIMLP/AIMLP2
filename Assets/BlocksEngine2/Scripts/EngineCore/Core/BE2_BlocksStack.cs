@@ -78,6 +78,7 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
     {
         Pointer = 0;
         IsActive = false;
+
     }
 
     //void Update()
@@ -115,6 +116,7 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
 
             Pointer = 0;
             IsActive = false;
+
         }
     }
 

@@ -121,10 +121,17 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
     //}
     //Coroutine buffCoroutine = null;
 
+     
+
+    
+    
+
 
     public void ExecuteSection(int sectionIndex)
     {
-       
+        
+
+
         if (BlocksStack.InstructionsArray.Length > LocationsArray[sectionIndex])
         {
             I_BE2_Instruction instruction = BlocksStack.InstructionsArray[LocationsArray[sectionIndex]];
@@ -156,6 +163,9 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
 
     public void ExecuteNextInstruction()
     {
+
+
+
         if (BlocksStack.InstructionsArray.Length > _lastLocation)
         {
             I_BE2_Instruction instruction = BlocksStack.InstructionsArray[_lastLocation];
@@ -175,6 +185,7 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
                 //        "\n(Refer to the documentation for information about the ExecuteInUpdate)");
 
                 BlocksStack.Pointer = _lastLocation;
+
             }
         }
         else

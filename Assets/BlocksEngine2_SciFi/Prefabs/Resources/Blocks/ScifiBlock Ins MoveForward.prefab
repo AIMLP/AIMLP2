@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Text: 1
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 3
-  m_ReadOnly: 0
+  m_ReadOnly: 1
   m_ShouldActivateOnSelect: 1
 --- !u!114 &5070352358356966463
 MonoBehaviour:
