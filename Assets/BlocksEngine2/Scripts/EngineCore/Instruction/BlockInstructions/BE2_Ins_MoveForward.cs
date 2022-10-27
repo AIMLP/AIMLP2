@@ -25,6 +25,7 @@ public class BE2_Ins_MoveForward : BE2_InstructionBase, I_BE2_Instruction
     //}
 
     bool _firstPlay = true;
+    float _timer = 0;
 
     // needed for functions that use lerp 
     public new bool ExecuteInUpdate => true;
@@ -41,7 +42,6 @@ public class BE2_Ins_MoveForward : BE2_InstructionBase, I_BE2_Instruction
         _timer = 0;
     }
 
-    float _timer = 0;
     Vector3 _initialPosition;
 
     public new void Function()

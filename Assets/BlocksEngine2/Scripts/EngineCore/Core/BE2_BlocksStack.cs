@@ -90,11 +90,11 @@ public class BE2_BlocksStack : MonoBehaviour, I_BE2_BlocksStack
 
     // v2.4 - Execute method of Blocks Stack refactored 
 
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(1.5f);
-        Debug.Log("Check");
-    }
+    //IEnumerator Delay()
+    //{
+    //    yield return new WaitForSeconds(1.5f);
+    //    Debug.Log("Check");
+    //}
 
     public void Execute()
     {

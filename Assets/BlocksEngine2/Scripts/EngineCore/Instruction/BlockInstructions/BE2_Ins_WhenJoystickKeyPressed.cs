@@ -9,10 +9,7 @@ public class BE2_Ins_WhenJoystickKeyPressed : BE2_InstructionBase, I_BE2_Instruc
     BE2_VirtualJoystick _virtualJoystick;
 
     public bool IsFunctionActive = false;
-    //public bool isFunctionActive
-    //{
-
-    //}
+    public bool IsFunctionStart = false;
 
 
     public static BE2_Ins_WhenJoystickKeyPressed instance = null;
@@ -31,16 +28,16 @@ public class BE2_Ins_WhenJoystickKeyPressed : BE2_InstructionBase, I_BE2_Instruc
     }
 
 
-    protected override void OnStart()
-    {
-        _dropdown = GetSectionInputs(0)[0].Transform.GetComponent<Dropdown>();
-        _virtualJoystick = BE2_VirtualJoystick.instance;
+    //protected override void OnStart()
+    //{
+    //    _dropdown = GetSectionInputs(0)[0].Transform.GetComponent<Dropdown>();
+    //    _virtualJoystick = BE2_VirtualJoystick.instance;
 
-        //PopulateDropdown();
-        //_dropdown.value = _dropdown.options.FindIndex(option => option.text == "A");
-        //ParseKeyCode();
-        //_dropdown.onValueChanged.AddListener(delegate { ParseKeyCode(); });
-    }
+    //    //PopulateDropdown();
+    //    //_dropdown.value = _dropdown.options.FindIndex(option => option.text == "A");
+    //    //ParseKeyCode();
+    //    //_dropdown.onValueChanged.AddListener(delegate { ParseKeyCode(); });
+    //}
 
     //void PopulateDropdown()
     //{
@@ -55,19 +52,26 @@ public class BE2_Ins_WhenJoystickKeyPressed : BE2_InstructionBase, I_BE2_Instruc
 
     void Update()
     {
-        if (_virtualJoystick.keys[_dropdown.value].isPressed)
-        {
-            BlocksStack.IsActive = true;
-            BE2_Ins_WhenPlayClicked.instance.IsPlayActive = false;
-        }
         IsFunctionActive = BlocksStack.IsActive;
-        
-
+        //Debug.Log(IsFunctionActive);
     }
     
+    public void FStart()
+    {
+        BlocksStack.IsActive = true;
+        IsFunctionActive = BlocksStack.IsActive;
+    }
 
     public new void Function()
     {
-        ExecuteSection(0);
+
+        if (IsFunctionStart)
+        {
+            
+            ExecuteSection(0);
+        }
+        
     }
+
+
 }

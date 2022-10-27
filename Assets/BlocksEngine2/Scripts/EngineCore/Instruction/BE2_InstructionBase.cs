@@ -144,6 +144,7 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
             {
                 BlocksStack.OverflowGuard++;
                 instruction.Function();
+               // Debug.Log("Check01 / " + BlocksStack.OverflowGuard + BlocksStack);
 
             }
             else
@@ -153,11 +154,13 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
                 //    "\n(Refer to the documentation for information about the ExecuteInUpdate)");
 
                 BlocksStack.Pointer = LocationsArray[sectionIndex];
+              //  Debug.Log("Check02 / " + BlocksStack.OverflowGuard + BlocksStack);
             }
         }
         else
         {
             BlocksStack.Pointer = LocationsArray[sectionIndex];
+          //  Debug.Log("Check03 / " + BlocksStack.OverflowGuard + BlocksStack);
         }
     }
 
@@ -170,12 +173,14 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
         {
             I_BE2_Instruction instruction = BlocksStack.InstructionsArray[_lastLocation];
             BlockTypeEnum type = instruction.InstructionBase.Block.Type;
-         
+
             // v2.1 - Loops are now executed "in frame" instead of mandatorily "in update". Faster loop execution and nested loops without delay
+           
             if (!instruction.ExecuteInUpdate && BlocksStack.OverflowGuard < _overflowLimit)
             {
                 BlocksStack.OverflowGuard++;
                 instruction.Function();
+               // Debug.Log("Check1 / "+ BlocksStack.OverflowGuard + BlocksStack);
 
             }
             else
@@ -185,12 +190,13 @@ public class BE2_InstructionBase : MonoBehaviour, I_BE2_InstructionBase
                 //        "\n(Refer to the documentation for information about the ExecuteInUpdate)");
 
                 BlocksStack.Pointer = _lastLocation;
-
+              //  Debug.Log("Check2 /" + +BlocksStack.OverflowGuard + BlocksStack);
             }
         }
         else
         {
             BlocksStack.Pointer = _lastLocation;
+           // Debug.Log("Check3" + BlocksStack);
         }
 
     }
