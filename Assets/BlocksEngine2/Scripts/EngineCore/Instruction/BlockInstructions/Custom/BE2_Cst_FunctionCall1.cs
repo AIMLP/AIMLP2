@@ -18,6 +18,12 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
     //{
     //    
     //}
+    BE2_VariablesManager _variablesManager;
+    void Start()
+    {
+        _variablesManager = BE2_VariablesManager.instance;
+        _variablesManager.AddOrUpdateVariable("매개변수1", "0");
+    }
 
     public new bool ExecuteInUpdate => true;
 
@@ -36,6 +42,8 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
         _firstPlay = true;
         _timer = 0;
     }
+
+
 
     public new void Function()
     {
@@ -61,6 +69,7 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
 
             BE2_Ins_WhenJoystickKeyPressed.instance.FStart();
             BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionStart = true;
+            _variablesManager.AddOrUpdateVariable("매개변수1", Section0Inputs[0].StringValue);
         }
         else
         {

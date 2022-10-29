@@ -11,12 +11,15 @@ public class CharController : MonoBehaviour
 
     //[SerializeField] Slider hpSlider;
     public Slider hpSlider;
+    BE2_VariablesManager _variablesManager;
 
     void Start()
     {
         hpSlider.value = hpSlider.maxValue;
         anim = GetComponent<Animator>();
         particleObject = GetComponentInChildren<ParticleSystem>();
+        _variablesManager = BE2_VariablesManager.instance;
+        _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class CharController : MonoBehaviour
             Invoke("DestroyPlayer", 1f);
 
         }
-
+        _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
     }
 
 
