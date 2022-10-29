@@ -23,6 +23,7 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
 
     bool _firstPlay = true;
     float _timer = 0;
+    bool IsFunctionCall = false;
 
     protected override void OnButtonStop()
     {
@@ -48,6 +49,7 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
         if (_firstPlay)
         {
             _firstPlay = false;
+            IsFunctionCall = true;
         }
 
         if (_timer < 2)
@@ -75,10 +77,11 @@ public class BE2_Cst_FunctionCall1 : BE2_InstructionBase, I_BE2_Instruction
     {
 
         //Debug.Log("Start : " + BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionStart + "/ Active : " + BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionActive);
-        if (BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionStart == true && BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionActive == false)
+        if (IsFunctionCall == true && BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionStart == true && BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionActive == false)
         {
             BE2_Ins_WhenJoystickKeyPressed.instance.IsFunctionStart = false;
             Debug.Log("FunctionFinish");
+            IsFunctionCall = false;
             ExecuteNextInstruction();
 
         }
