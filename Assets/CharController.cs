@@ -39,7 +39,7 @@ public class CharController : MonoBehaviour
         _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
     }
 
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
    
@@ -50,6 +50,7 @@ public class CharController : MonoBehaviour
         }
         
     }
+    */
 
     /*
     private void StopParticle()                                    

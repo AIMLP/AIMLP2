@@ -6,43 +6,96 @@ using UnityEngine.UI;
 public class EnemyController : MonoBehaviour
 {
 
+    public Slider HSlider;
+    private float state;
+    GameObject Player;
+
+
     public Animator anim;
     ParticleSystem particleObject; //파티클시스템
 
     [SerializeField] Slider hpSlider;
 
+
+
+
     void Start()
     {
         hpSlider.value = hpSlider.maxValue;
+        state = hpSlider.maxValue;
         anim = GetComponent<Animator>();
         particleObject = GetComponentInChildren<ParticleSystem>();
+
+        Player = GameObject.Find("SwordAndShield");
     }
+
+
+
 
     // Update is called once per frame
     void Update()
     {
 
-        //Debug.Log(hpSlider.value);
+        float distance = Vector3.Distance(Player.transform.position, transform.position);
+
+        if (distance <= 1.2)
+        {
+            if (hpSlider.value == state)
+            {
+                Attack();
+            }
+            else
+            {
+                anim.Play("DefendGetHit");
+                Invoke("GetBack", 1f);
+
+            }
+        }
+
+
+
         if (hpSlider.value <= 0)
         {
             anim.Play("Die");
-            //anim.SetTrigger("Die");
+            anim.SetTrigger("Die");
             this.particleObject.Play();
             Invoke("StopParticle", 0.1f);
             Invoke("DestroyEnemy", 1f);
-
         }
 
     }
+
+
+
+    void GetBack()
+    {
+        state = hpSlider.value;
+    }
+
+
+
+    void Attack()
+    {
+        CharController HSlider = GameObject.Find("SwordAndShield").GetComponent<CharController>();
+
+        anim.Play("Attack01");
+        HSlider.hpSlider.value -= 0.07f;
+
+
+    }
+
 
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.layer == LayerMask.NameToLayer("attack"))
         {
             hpSlider.value--;
         }
+
     }
+
 
     private void StopParticle()
     {

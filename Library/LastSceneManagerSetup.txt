@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BlocksEngine2_SciFi/Scenes/ScifiBE2SampleScene.unity
+- path: Assets/BlocksEngine2_SciFi/Scenes/Hard.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
