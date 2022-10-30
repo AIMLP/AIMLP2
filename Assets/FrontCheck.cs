@@ -17,14 +17,26 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
         _variablesManager.AddOrUpdateVariable("앞에 길", FRoad);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag != "Monster")
+            MonsterOff();
+
+
+        if (other.tag != "Road")
+            RoadOff();
+
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Monster")
-            MonsterOn();      
-        
+            MonsterOn();
+
+
         if (other.tag == "Road")
             RoadOn();
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -40,6 +52,7 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
     {
         FMonster = "1";
         _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
+        Debug.Log("몬스터ON");
     }
 
     private void RoadOn()
@@ -52,6 +65,7 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
     {
         FMonster = "0";
         _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
+        Debug.Log("몬스터OFF");
     }
 
     private void RoadOff()
