@@ -38,7 +38,7 @@ public class BE2_Cst_Heal : BE2_InstructionBase, I_BE2_Instruction
         if (_firstPlay)
         {
             _firstPlay = false;
-            HSlider.hpSlider.value += 1;
+            HSlider.hpSlider.value += 5;
             Debug.Log("healing now");
             
         }

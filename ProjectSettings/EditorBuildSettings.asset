@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BlocksEngine2_SciFi/Scenes/ScifiBE2SampleScene.unity
     guid: 28db5afba24f900ba844c731679c8717
+  - enabled: 1
+    path: Assets/BlocksEngine2_SciFi/Scenes/Easy.unity
+    guid: da97ca005e8caf44ba9dfa99b73c97d0
+  - enabled: 1
+    path: Assets/BlocksEngine2_SciFi/Scenes/Normal.unity
+    guid: 8f0c2c8be49391040b5570caf992b6a9
+  - enabled: 1
+    path: Assets/BlocksEngine2_SciFi/Scenes/Hard.unity
+    guid: 80a201247ec6ee646986ef1cc5477776
   m_configObjects: {}
