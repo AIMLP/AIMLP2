@@ -52,7 +52,7 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
     {
         FMonster = "1";
         _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
-        Debug.Log("몬스터ON");
+ //       Debug.Log("몬스터ON");
     }
 
     private void RoadOn()

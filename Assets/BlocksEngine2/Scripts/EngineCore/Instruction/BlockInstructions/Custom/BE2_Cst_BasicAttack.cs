@@ -42,7 +42,8 @@ public class BE2_Cst_BasicAttack : BE2_InstructionBase, I_BE2_Instruction
     public new void Function()
 
     {
-        player = TargetObject.Transform.GetChild(0).gameObject;
+     //   player = TargetObject.Transform.GetChild(0).gameObject;
+        player = GameObject.Find("SwordAndShield");
         anim = player.GetComponent<Animator>();
 
         if (_firstPlay)

@@ -13,6 +13,9 @@ public class CharController : MonoBehaviour
     public Slider hpSlider;
     BE2_VariablesManager _variablesManager;
 
+    public GameObject gameOverText;     //
+
+
     void Start()
     {
         hpSlider.value = hpSlider.maxValue;
@@ -20,51 +23,33 @@ public class CharController : MonoBehaviour
         particleObject = GetComponentInChildren<ParticleSystem>();
         _variablesManager = BE2_VariablesManager.instance;
         _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
+        gameOverText.SetActive(false);    //
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //Debug.Log(hpSlider.value);
+ 
         if (hpSlider.value <= 0)
         {
-            anim.Play("Die");
-            //anim.SetTrigger("Die");               
-            //this.particleObject.Play();                   
-            //Invoke("StopParticle", 0.1f);         
+            anim.Play("Die");        
             Invoke("DestroyPlayer", 1f);
 
         }
         _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
     }
 
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-   
-        if (other.gameObject.layer == LayerMask.NameToLayer("attack"))
-        {
-            hpSlider.value--;
-            //Debug.Log("attack");
-        }
-        
-    }
-    */
 
-    /*
-    private void StopParticle()                                    
-    {
-        this.particleObject.Stop();
-    }
-    */
 
-    private void DestroyPlayer()
+    public void DestroyPlayer()
     {
 
         gameObject.SetActive(false);
+
+        gameOverText.SetActive(true);
         Destroy(gameObject);
+
     }
-    
+
 }
 

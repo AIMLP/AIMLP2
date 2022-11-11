@@ -34,24 +34,32 @@ public class EnemyController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
-        float distance = Vector3.Distance(Player.transform.position, transform.position);
-
-        if (distance <= 1.2)
+    { 
+        if (Player == null)          //
         {
-            if (hpSlider.value == state)
-            {
-                Attack();
-            }
-            else
-            {
-                anim.Play("DefendGetHit");
-                Invoke("GetBack", 1f);
-
-            }
+            //    Invoke("DestroyEnemy", 3f);
+            DestroyEnemy();
         }
 
+
+        if (Player)
+        {
+            float distance = Vector3.Distance(Player.transform.position, transform.position);
+
+            if (distance <= 1.2 && distance != 0)
+            {
+                if (hpSlider.value == state)
+                {
+                    Attack();
+                }
+                else
+                {
+                    anim.Play("DefendGetHit");
+                    Invoke("GetBack", 1f);
+
+                }
+            }
+        }
 
 
         if (hpSlider.value <= 0)
