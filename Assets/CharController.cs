@@ -32,7 +32,7 @@ public class CharController : MonoBehaviour
  
         if (hpSlider.value <= 0)
         {
-            anim.Play("Die");        
+            anim.Play("Die_SwordShield");        
             Invoke("DestroyPlayer", 1f);
 
         }

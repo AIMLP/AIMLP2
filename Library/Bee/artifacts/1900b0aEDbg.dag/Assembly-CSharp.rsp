@@ -115,6 +115,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/GUI_Sci_FI/WebDemo/Plugins/Demigiant/DOTween/DOTween.dll"
@@ -326,6 +327,8 @@
 -r:"D:/Git/AIMLP2/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Services.Core.Environments.ref.dll"
@@ -463,8 +466,10 @@
 "Assets/BlocksEngine2_SciFi/Scripts/BE2_NeonBlockColor.cs"
 "Assets/BlocksEngine2_SciFi/Scripts/BlockSections/BE2_ScifiBlockSectionBody.cs"
 "Assets/BlocksEngine2_SciFi/Scripts/BlockSections/BE2_ScifiBlockSectionHeader.cs"
+"Assets/Change.cs"
 "Assets/CharController.cs"
 "Assets/Controllerrr.cs"
+"Assets/CostumeSet.cs"
 "Assets/EnemyController.cs"
 "Assets/FrontCheck.cs"
 "Assets/FunctionCall.cs"
@@ -531,6 +536,7 @@
 "Assets/SceneChanger.cs"
 "Assets/Spawner.cs"
 "Assets/StageClearCheck.cs"
+"Assets/TextControl.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

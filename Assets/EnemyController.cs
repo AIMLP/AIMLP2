@@ -97,7 +97,7 @@ public class EnemyController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.layer == LayerMask.NameToLayer("attack"))
+        if (other.gameObject.tag == "Sword")
         {
             hpSlider.value--;
         }

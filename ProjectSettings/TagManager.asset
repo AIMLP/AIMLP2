@@ -8,6 +8,8 @@ TagManager:
   - Road
   - StageClear
   - PlayerLocation
+  - WebDemoController
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Road
   - 
   - 
-  - 
+  - OverUI
   - 
   - 
   - 
@@ -44,4 +46,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3863321885
+    locked: 0
+  - name: OverUI
+    uniqueID: 86000233
     locked: 0

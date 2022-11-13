@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BlocksEngine2_SciFi/Scenes/Scene UI/MainScene.unity
+- path: Assets/BlocksEngine2_SciFi/Scenes/Normal.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

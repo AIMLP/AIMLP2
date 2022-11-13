@@ -45,4 +45,9 @@ public class Change : MonoBehaviour
     {
         SceneManager.LoadScene("Hard");
     }
+
+    public void CostumeMenuChange()
+    {
+        SceneManager.LoadScene("Costume");
+    }
 }

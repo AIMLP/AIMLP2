@@ -26,6 +26,12 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
         if (other.tag != "Road")
             RoadOff();
 
+        if (other.tag == "Monster")
+            MonsterOn();
+
+
+        if (other.tag == "Road")
+            RoadOn();
     }
 
     private void OnTriggerStay(Collider other)
@@ -52,7 +58,7 @@ public class FrontCheck : BE2_TargetObjectSpacecraft3D
     {
         FMonster = "1";
         _variablesManager.AddOrUpdateVariable("앞에 몬스터", FMonster);
- //       Debug.Log("몬스터ON");
+        Debug.Log("몬스터ON");
     }
 
     private void RoadOn()
