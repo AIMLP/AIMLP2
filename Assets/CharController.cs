@@ -13,17 +13,23 @@ public class CharController : MonoBehaviour
     public Slider hpSlider;
     BE2_VariablesManager _variablesManager;
 
-    public GameObject gameOverText;     //
+    public GameObject gameOverText;
+    public GameObject clearText;
+    Vector3 playerPos;
+    Quaternion playerRot;
 
 
     void Start()
     {
         hpSlider.value = hpSlider.maxValue;
+        playerPos = transform.position;     //
+        playerRot = transform.rotation;     //
         anim = GetComponent<Animator>();
         particleObject = GetComponentInChildren<ParticleSystem>();
         _variablesManager = BE2_VariablesManager.instance;
         _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
-        gameOverText.SetActive(false);    //
+        gameOverText.SetActive(false);
+        clearText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,9 +38,9 @@ public class CharController : MonoBehaviour
  
         if (hpSlider.value <= 0)
         {
-            anim.Play("Die_SwordShield");        
+            anim.Play("Die_SwordShield");
             Invoke("DestroyPlayer", 1f);
-
+           
         }
         _variablesManager.AddOrUpdateVariable("플레이어HP", (hpSlider.value).ToString());
     }
@@ -45,10 +51,17 @@ public class CharController : MonoBehaviour
     {
 
         gameObject.SetActive(false);
-
         gameOverText.SetActive(true);
-        Destroy(gameObject);
+        transform.position = playerPos;
+        transform.rotation = playerRot;
 
+    }
+
+    public void ResetPlayer()
+    {
+        gameObject.SetActive(false);
+        transform.position = playerPos;
+        transform.rotation = playerRot;
     }
 
 }

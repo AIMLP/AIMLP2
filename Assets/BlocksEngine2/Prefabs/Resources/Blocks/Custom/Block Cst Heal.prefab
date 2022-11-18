@@ -681,6 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fabd2fd3de81354a9987b2b574665b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HSlider: {fileID: 0}
 --- !u!114 &981809450857221122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f21b376eb2627968866730dbd2c8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabBlock: {fileID: 5828295451821933789}
+  prefabBlock: {fileID: 829287959084985024, guid: eaac1e08c69bb9142ae6bf86edcfc060,
+    type: 3}
 --- !u!114 &981809450857221123
 MonoBehaviour:
   m_ObjectHideFlags: 0

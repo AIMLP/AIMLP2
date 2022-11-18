@@ -6,11 +6,12 @@ public class Spawner : MonoBehaviour
 {
 
     public GameObject objectToSpawn;
+    public GameObject addObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(objectToSpawn, transform.position, transform.rotation);    
+        addObject = Instantiate(objectToSpawn, transform.position, transform.rotation);    
     }
 
     // Update is called once per frame
@@ -18,4 +19,17 @@ public class Spawner : MonoBehaviour
     {
         
     }
+
+    public void ReSpawn()
+    {
+        addObject = Instantiate(objectToSpawn, transform.position, transform.rotation);
+    }
+
+    public void DestroyEnemy()
+    {
+       Destroy(addObject);
+
+    }
+    
+
 }

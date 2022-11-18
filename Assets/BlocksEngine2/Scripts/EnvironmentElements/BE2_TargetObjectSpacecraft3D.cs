@@ -8,6 +8,8 @@ public class BE2_TargetObjectSpacecraft3D : BE2_TargetObject
 
     public new Transform Transform => transform;
     public delegate void CheckEvent();
+
+
  
 
 
@@ -29,7 +31,7 @@ public class BE2_TargetObjectSpacecraft3D : BE2_TargetObject
 
     //void Start()
     //{
-    //
+    //    
     //}
 
     //void Update()

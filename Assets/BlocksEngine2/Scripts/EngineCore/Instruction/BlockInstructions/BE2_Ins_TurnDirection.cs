@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BE2_Ins_TurnDirection : BE2_InstructionBase, I_BE2_Instruction
 {
+
+ //   public GameObject player;              //
+
+    /// </summary>
     //protected override void OnAwake()
     //{
     //
@@ -41,11 +45,12 @@ public class BE2_Ins_TurnDirection : BE2_InstructionBase, I_BE2_Instruction
     {
         _input0 = Section0Inputs[0];
         _value = _input0.StringValue;
+
         if (_value == "왼쪽")
         {
             if (_firstPlay)
             {
-                _initialPosition = TargetObject.Transform.rotation;
+                   _initialPosition = TargetObject.Transform.rotation;
                 _firstPlay = false;
             }
 
