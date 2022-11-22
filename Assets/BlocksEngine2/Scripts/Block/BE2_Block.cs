@@ -80,6 +80,7 @@ public class BE2_Block : MonoBehaviour, I_BE2_Block
             if (outerSpot)
                 _dragDropManager.AddToSpotsList(outerSpot);
         }
+
     }
 
     void RemoveSpotsFromManager()

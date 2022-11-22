@@ -36,11 +36,13 @@ public class BE2_DragOperation : MonoBehaviour, I_BE2_Drag
 
         ChildBlocks = new List<I_BE2_Block>();
         ChildBlocks.AddRange(GetComponentsInChildren<I_BE2_Block>());
+
     }
 
     public void OnRightPointerDownOrHold()
     {
         BE2_UI_ContextMenuManager.instance.OpenContextMenu(0, Block);
+
     }
 
     public void OnDrag()

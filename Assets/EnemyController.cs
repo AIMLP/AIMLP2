@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public Slider HSlider;
     private float state;
     GameObject Player;
-
+    AudioSource audioSource;
 
     public Animator anim;
     ParticleSystem particleObject; //파티클시스템
@@ -25,11 +25,12 @@ public class EnemyController : MonoBehaviour
         state = hpSlider.maxValue;
         anim = GetComponent<Animator>();
         particleObject = GetComponentInChildren<ParticleSystem>();
+        audioSource = this.GetComponent<AudioSource>();
 
         Player = GameObject.Find("SwordAndShield");
     }
 
-
+    bool SoundCheck = false;
 
 
     // Update is called once per frame
@@ -66,8 +67,15 @@ public class EnemyController : MonoBehaviour
         {
             anim.Play("Die");
             anim.SetTrigger("Die");
-         //   this.particleObject.Play();
-        //    Invoke("StopParticle", 0.1f);
+
+            if(SoundCheck == false)
+            {
+                audioSource.Play();
+                SoundCheck = true;
+            }
+            
+            //   this.particleObject.Play();
+            //    Invoke("StopParticle", 0.1f);
             Invoke("DestroyEnemy", 1f);
         }
 

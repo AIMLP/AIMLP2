@@ -35,11 +35,13 @@ public class BE2_DragBlock : MonoBehaviour, I_BE2_Drag
 
         ChildBlocks = new List<I_BE2_Block>();
         ChildBlocks.AddRange(GetComponentsInChildren<I_BE2_Block>());
+
     }
 
     public void OnRightPointerDownOrHold()
     {
         BE2_UI_ContextMenuManager.instance.OpenContextMenu(0, Block);
+
     }
 
     public void OnDrag()
@@ -79,6 +81,7 @@ public class BE2_DragBlock : MonoBehaviour, I_BE2_Drag
 
             spot.Block.ParentSection.UpdateLayout();
             _dragDropManager.CurrentSpot = spot;
+
         }
         else
         {
@@ -86,12 +89,15 @@ public class BE2_DragBlock : MonoBehaviour, I_BE2_Drag
             // v2.6 - bugfix: fixed null exception when starting the scene with no Target Objects 
             //ghostBlockTransform.SetParent(_dragDropManager.ProgrammingEnv.Transform);
             _dragDropManager.CurrentSpot = null;
+
         }
         _isDetectingSpot = false;
 
         // v2.6 - adjustments on position and angle of blocks for supporting all canvas render modes
         ghostBlockTransform.localPosition = new Vector3(ghostBlockTransform.localPosition.x, ghostBlockTransform.localPosition.y, 0);
         ghostBlockTransform.localEulerAngles = Vector3.zero;
+
+
     }
 
     public void OnPointerUp()
@@ -112,6 +118,8 @@ public class BE2_DragBlock : MonoBehaviour, I_BE2_Drag
 
                 _dragDropManager.CurrentSpot = null;
             }
+            Debug.Log("attach");
+            BlockSound.BlockSoundCheck = true;
         }
         else
         {
@@ -126,6 +134,7 @@ public class BE2_DragBlock : MonoBehaviour, I_BE2_Drag
                     Transform.SetParent(programmingEnv.Transform);
                 else
                     Destroy(Transform.gameObject);
+
             }
             else
             {

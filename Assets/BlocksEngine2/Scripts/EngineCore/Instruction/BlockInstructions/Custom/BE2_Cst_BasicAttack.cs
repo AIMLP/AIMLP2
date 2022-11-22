@@ -37,7 +37,7 @@ public class BE2_Cst_BasicAttack : BE2_InstructionBase, I_BE2_Instruction
     }
 
     float _timer = 0;
-
+    AudioSource audioSource;
 
     public new void Function()
 
@@ -50,11 +50,13 @@ public class BE2_Cst_BasicAttack : BE2_InstructionBase, I_BE2_Instruction
          player = GameObject.Find("SwordAndShield");
       //  player = GameObject.Find("Target Object");
         anim = player.GetComponent<Animator>();
+        audioSource = this.GetComponent<AudioSource>();
 
         if (_firstPlay)
         {
             _firstPlay = false;
             anim.Play("NormalAttack01_SwordShield");
+            audioSource.Play();
         }
 
         if (_timer < 3)
